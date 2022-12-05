@@ -1,3 +1,4 @@
 #!/usr/bin/python3
 def no_c(my_string):
-    print(my_string.translate({ord(letter): '' for letter in 'cC'}))
+    new_string = "".join([i for i in my_string if i != 'c' and i != 'C'])
+    print(new_string)
